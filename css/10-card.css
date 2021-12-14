@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+}
+
+.container .card .name{
+    position: relative;
+    padding: 10px 0;
+    border: 2px solid #000;
+    text-align: center;
+    z-index: 1;
+}
+
+.container .card .name h3{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.container .card .details{
+    position: relative;
+    text-align: center;
+    top: -2px;
+    height: 0px;
+    transition: .5s;
+    border: 2px solid #000;
+    margin-top: -2px;
+    overflow: hidden;
+}
+
+.container .card:hover .details{
+    height: 316px;
+}
+
+.container .card .details .content{
+    position: relative;
+    padding: 40px 20px;
+}
+
+.container .card .details .content h2{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.container .card .details .content h2 span{
+    font-size: 0.4px;
+}
+.container .card .details .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .card:nth-child(1) .name{
+    background: #d2fff2;
+}
+
+.container .card:nth-child(1) .details{
+    background: #f1fffb;
+}
+
+.container .card:nth-child(2) .name{
+    background: #fcffd2;
+}
+
+.container .card:nth-child(2) .details{
+    background: #ffffe2;
+}
+
+.container .card:nth-child(3) .name{
+    background: #f2d2ff;
+}
+
+.container .card:nth-child(3) .details{
+    background: #ffeeff;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/9-menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropdown">
+        <input type="text" class="texBox" placeholder="Dropdown Menu" readonLy>
+        <div class="option">
+            <div onclick="show('Html')" class="html"><ion-icon name="logo-html5"></ion-icon>Html</div>
+            <div onclick="show('CSS')" class="css"><ion-icon name="logo-css3"></ion-icon>CSS</div>
+            <div onclick="show('Javascript')" class="js"><ion-icon name="logo-nodejs"></ion-icon>Javascript</div>
+            <div onclick="show('Figma')" class="figma"><ion-icon name="logo-figma"></ion-icon>Figma</div>
+            <div onclick="show('ReactJS')" class="react"><ion-icon name="logo-react"></ion-icon>ReactJS</div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function show(anything){
+            document.querySelector('.texBox').value = anything;
+        }
+
+        let dropdown = document.querySelector('.dropdown');
+        dropdown.onclick = function(){
+            dropdown.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
